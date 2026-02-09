@@ -10,12 +10,13 @@ class AIServiceFactory {
       case 'ollama':
         return ollamaService;
       case 'openai':
-      default:
         return openaiService;
       case 'custom':
         return customService;
       case 'azure':
         return azureService;
+      default:
+        return openaiService;
     }
   }
 }
