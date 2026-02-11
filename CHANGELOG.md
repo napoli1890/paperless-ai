@@ -15,7 +15,6 @@ All notable changes to this fork will be documented in this file. This project a
 - **Docker Workflow:** Shifted from static image pulling to local build context (`build: .`) in `docker-compose.yml` to ensure fork-specific changes are applied.
 
 ### Fixed
-- **API Compatibility:** Resolved issues with custom OpenAI-compatible endpoints (Groq, etc.) that were causing parsing errors in the original core.
 
 ### Removed
 - **Repo Cleanup:** Removed local SQLite databases (`.db`), log files, and sensitive `.env` files from the public repository history.
@@ -27,3 +26,6 @@ All notable changes to this fork will be documented in this file. This project a
 ### Initial Fork
 - Forked from `clusterzx/paperless-ai` (v3.0.9).
 - Basic environment setup for Raspberry Pi deployment.
+
+### Fixed
+- **API Compatibility:** Resolved issues with custom OpenAI-compatible endpoints (Groq, etc.) that were causing parsing errors in the original core.
